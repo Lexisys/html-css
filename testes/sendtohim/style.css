@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: pink;
+}
+
+#container{
+    background-color: white;
+    border-radius: 10px;
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;  /* centraliza horizontalmente */
+    align-items: center;      /* centraliza verticalmente */
+    height: 300px; 
+}
+
+#item{
+    justify-content: center;
+    padding: 25px;
+}
+
+#item > img{
+    height: 170px;
+    width: 170px;
+    border-radius: 10px;
+}
+
+.amo{
+
+    margin: 3px;
+    padding-top: 10px;
+}
+
+.clique{
+    
+    margin-top: 3px ;
+}
+
+.clique > a{
+    text-decoration: none;
+    color: rgb(255, 154, 170);
+}
+
+#item > p{
+    text-align: center;
+}
