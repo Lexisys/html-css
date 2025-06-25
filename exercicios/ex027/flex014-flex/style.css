@@ -13,10 +13,16 @@ body{
     line-height: 1.5em;
 }
 
-p, h1, h2{
+p{
     margin-bottom: 10px;
     text-align: justify;
 }
+
+ h1, h2{
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.2em;
+ }
 
 header, .normal{
     padding: 20px;
@@ -25,9 +31,51 @@ header, .normal{
 .flex{
     padding: 20px;
     background-color: rgb(252, 206, 213);
+
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .media > img{
     width: 400px;
     height: 400px;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content:space-between;
+    
+}
+
+article > div.text{
+    flex: 1 1 500px;
+}
+
+article div.media{
+    flex: 1 0 500px;
+}
+
+.text > p{
+    padding-right: 15px;
+}
+
+.media > img{
+    display: block;
+    margin: auto;
+    padding-bottom: 18px;
+    
+}
+
+.media > iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
